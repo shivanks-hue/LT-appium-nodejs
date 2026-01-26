@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs "node" 
+    }
+
     environment {
         LT_USERNAME = 'YOUR_LAMBDATEST_USERNAME'
         LT_ACCESS_KEY = 'YOUR_LAMBDATEST_ACCESS_KEY'

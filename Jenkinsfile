@@ -6,8 +6,8 @@ pipeline {
     }
 
     environment {
-        LT_USERNAME = 'shivankstestmuai'
-        LT_ACCESS_KEY = 'LT_WarkxkfzW2o2ho2eI0okw1W4jMbcVBBbeeC0TG3eyB3kbGN'
+        LT_USERNAME = 'username'
+        LT_ACCESS_KEY = 'accesskey'
     }
 
     stages {

@@ -2,30 +2,30 @@ pipeline {
     agent any
 
     tools {
-        nodejs "node" 
+        nodejs "node"
     }
 
     environment {
-        LT_USERNAME = 'LT_USERNAME'
-        LT_ACCESS_KEY = 'LT_ACCESKEY'
+        LT_USERNAME = 'shivankstestmuai'
+        LT_ACCESS_KEY = 'LT_WarkxkfzW2o2ho2eI0okw1W4jMbcVBBbeeC0TG3eyB3kbGN'
     }
 
     stages {
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Run Android Tests') {
             steps {
-                sh 'node Android.js'
+                bat 'node Android.js'
             }
         }
 
         stage('Run iOS Tests') {
             steps {
-                sh 'node IOS.js'
+                bat 'node IOS.js'
             }
         }
     }
@@ -36,4 +36,3 @@ pipeline {
         }
     }
 }
-
